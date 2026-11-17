@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: blue;
+            font-size: 26px;
+        }
+
+        legend {
+            background-color: rgb(112, 49, 12);
+            padding: 4px 12px;
+        }
+
+        h2 {
+            color: rgb(0, 255, 255);
+            margin: 0;
+        }
+
+        form {
+            width: 15cm;
+            margin: 0 auto;
+            padding: 15px;
+            background-color: rgb(200, 0, 255);
+            font-style: italic;
+            color: rgb(247, 246, 246);
+            box-sizing: border-box;
+        }
+
+        input {
+            padding: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="email"], input[type="number"], input[type="password"] {
+            width: 60%;
+        }
+
+        input:focus {
+            background-color: rgb(197, 203, 192);
+            color: rgb(21, 0, 255);
+            outline: none;
+        }
+
+        button {
+            padding: 6px 16px;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            color: rgb(239, 239, 239);
+            background-color: green;
+            cursor: pointer;
+        }
+
+        button:active {
+            background-color: rgba(0, 255, 38, 0.53);
+        }
+
+        a {
+            color: rgb(247, 246, 246);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Reset your Password</h1>
+
+    <form action="login.html" onsubmit="event.preventDefault(); window.location.href='login.html';">
+        <fieldset>
+            <legend><h2>Enter valid details</h2></legend>
+            <strong>
+                <br>
+                <label for="Email">Email:</label>
+                <input type="email" id="Email" name="email" placeholder="abc@abc.com" required>
+                <br><br>
+
+                <label for="otp">Enter OTP:</label>
+                <input type="number" id="otp" name="otp" placeholder="Enter valid OTP" required>
+                <br><br>
+
+                <label for="Password">New Password:</label>
+                <input type="password" id="Password" name="password" placeholder="********" required>
+                <br><br>
+
+                <button type="submit">Reset Password</button>            
+            </strong>
+        </fieldset>
+    </form>
+
+</body>
+</html>
