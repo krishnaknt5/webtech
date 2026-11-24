@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 2fr 4fr; 
+            gap: 8px;
+        }
+        .box{
+            border: 2px solid black;
+            background-color: blue;
+            font-style: italic ;
+            color: aquamarine;
+            object-fit: cover;
+        }
+        /* NEW - For images inside box */
+        .box img{
+            width: 100%;
+            height: 150px;
+            object-fit: cover; /* image will not stretch */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS GRID PROPERTIES</h1>
+    <div class="container">
+        <div class="box"><img src="img.jpeg" ></div>
+        <div class="box"><img src="img.jpeg" ></div>
+        <div class="box"><img src="img.jpeg" ></div>
+        <div class="box"><img src="img.jpeg"></div>
+        <div class="box"><img src="img.jpeg" ></div>
+        <div class="box"><img src="img.jpeg"></div>
+    </div>
+</body>
+</html>
